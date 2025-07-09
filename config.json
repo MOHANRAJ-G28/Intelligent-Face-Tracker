@@ -1,0 +1,36 @@
+{
+  "video": {
+    "source": "0",
+    "frame_skip": 2,
+    "fps": 30,
+    "width": 640,
+    "height": 480
+  },
+  "detection": {
+    "confidence_threshold": 0.5,
+    "nms_threshold": 0.4,
+    "model_size": "n",
+    "device": "cpu"
+  },
+  "recognition": {
+    "similarity_threshold": 0.6,
+    "embedding_size": 512,
+    "model_name": "buffalo_l",
+    "device": "cpu"
+  },
+  "tracking": {
+    "max_disappeared": 30,
+    "min_hits": 3,
+    "iou_threshold": 0.3
+  },
+  "logging": {
+    "log_level": "INFO",
+    "save_images": true,
+    "flush_interval": 10,
+    "max_log_size": 100
+  },
+  "database": {
+    "path": "visitor_counter.db",
+    "backup_interval": 3600
+  }
+} 
